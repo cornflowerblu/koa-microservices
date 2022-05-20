@@ -1,4 +1,5 @@
 import { Sequelize } from 'sequelize'
+import dotenv from 'dotenv'
 import app from './app'
 
 const sequelize = new Sequelize({
@@ -17,6 +18,7 @@ const checkConnection = async () => {
 
 checkConnection();
 
+dotenv.config();
 const port = process.env.PORT || 8080
 
 app.listen(port)
