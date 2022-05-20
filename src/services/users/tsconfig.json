@@ -2,6 +2,7 @@
     "extends": "../../../tsconfig.json",
     "compilerOptions": {
         "outDir": "./bin",
-        "esModuleInterop": true
-    }
+        "esModuleInterop": true,
+    },
+    "exclude": ["tests"]
 }

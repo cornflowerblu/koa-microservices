@@ -1,0 +1,1 @@
+// Write a test about how sequelize does a truthiness check on the model against an in-memory sql lite DB
