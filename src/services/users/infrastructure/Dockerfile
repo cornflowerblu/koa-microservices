@@ -1,12 +1,11 @@
 FROM node:lts-alpine AS builder
 WORKDIR /home/node
-COPY /users/*.json /home/node/
-COPY /users/*.ts /home/node
-COPY /users/bin /home/node/bin
+COPY ../*.json /home/node/
+COPY ../*.ts /home/node
 RUN npm ci --no-audit
 RUN npm run build
 
-
+FROM node:lts-alpine
 WORKDIR /home/node/app
 COPY --from=builder /home/node/bin .
 RUN yarn install --production
