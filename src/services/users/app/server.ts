@@ -4,7 +4,7 @@ import app from './app'
 
 const sequelize = new Sequelize({
     dialect: 'sqlite',
-    storage: './users.db'
+    storage: './data/users.db'
 });
 
 const checkConnection = async () => {
