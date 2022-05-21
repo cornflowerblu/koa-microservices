@@ -1,8 +1,7 @@
 FROM node:lts-alpine AS builder
 WORKDIR /home/node
-COPY ../*.json /home/node/
-COPY ../*.ts /home/node
-RUN npm ci --no-audit
+COPY ../* /home/node/
+RUN npm install --no-audit
 RUN npm run build
 
 FROM node:lts-alpine
