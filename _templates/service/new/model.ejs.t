@@ -1,5 +1,5 @@
 ---
-to: src/services/<%= service %>/<%= service %>.model.ts
+to: src/services/<%= service %>/<%= model %>.model.ts
 ---
 import { CreationOptional, InferAttributes, InferCreationAttributes, Model } from "sequelize/types";
 import { Sequelize, DataTypes } from 'sequelize';

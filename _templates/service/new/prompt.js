@@ -5,13 +5,13 @@ module.exports = [
   {
     type: 'input',
     name: 'service',
-    message: "What is your service called?",
+    message: "What is your service called? (Plural noun please!)",
   },
   {
     type: 'multiselect',
     name: 'components',
     message: 'What additional components will you need?',
-    initial: 0,
+    initial: [0,1,2],
     choices: [
       {
         name: 'model',
@@ -30,6 +30,6 @@ module.exports = [
     {
       type: 'input',
       name: 'model',
-      message: "Model name? (Usualy your service name capitalized)",
+      message: "Model name? (Usualy your service name capitalized and singular please!)",
     },
 ]
