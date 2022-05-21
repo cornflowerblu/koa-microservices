@@ -30,6 +30,6 @@ module.exports = [
     {
       type: 'input',
       name: 'model',
-      message: "Model name? (Please use a capital letter)",
+      message: "Model name? (Usualy your service name capitalized)",
     },
 ]
